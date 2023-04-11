@@ -1,0 +1,19 @@
+name: build
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: haskell/actions/setup@v2
+      - uses: ankane/setup-postgres@v1
+        with:
+          database: pgvector_haskell_test
+          dev-files: true
+      - run: |
+          cd /tmp
+          git clone --branch v0.4.1 https://github.com/pgvector/pgvector.git
+          cd pgvector
+          make
+          sudo make install
+      - run: cabal test
