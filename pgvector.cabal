@@ -28,7 +28,7 @@ library
     import:           warnings
     exposed-modules:  Pgvector
     build-depends:
-        base >= 4.6 && < 4.18,
+        base >= 4.6 && < 4.19,
         bytestring >= 0.10 && < 0.12,
         postgresql-simple >= 0.6 && < 0.7
     hs-source-dirs:   src
