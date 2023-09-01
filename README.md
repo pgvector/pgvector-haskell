@@ -46,6 +46,8 @@ Add an approximate index
 
 ```haskell
 execute_ conn "CREATE INDEX ON items USING ivfflat (embedding vector_l2_ops) WITH (lists = 100)"
+-- or
+execute_ conn "CREATE INDEX ON items USING hnsw (embedding vector_l2_ops)"
 ```
 
 Use `vector_ip_ops` for inner product and `vector_cosine_ops` for cosine distance
