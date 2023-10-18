@@ -20,6 +20,12 @@ Import the library
 import Pgvector
 ```
 
+Enable the extension
+
+```haskell
+execute_ conn "CREATE EXTENSION IF NOT EXISTS vector"
+```
+
 Create a table
 
 ```haskell
