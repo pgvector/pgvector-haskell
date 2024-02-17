@@ -4,7 +4,7 @@
 
 Supports [postgresql-simple](https://hackage.haskell.org/package/postgresql-simple)
 
-[![Build Status](https://github.com/pgvector/pgvector-haskell/workflows/build/badge.svg?branch=master)](https://github.com/pgvector/pgvector-haskell/actions)
+[![Build Status](https://github.com/pgvector/pgvector-haskell/actions/workflows/build.yml/badge.svg)](https://github.com/pgvector/pgvector-haskell/actions)
 
 ## Getting Started
 
