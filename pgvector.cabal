@@ -28,9 +28,9 @@ library
     import:           warnings
     exposed-modules:  Pgvector
     build-depends:
-        base >= 4.6 && < 4.19,
+        base >= 4.6 && < 4.22,
         bytestring >= 0.10 && < 0.12,
-        postgresql-simple >= 0.6 && < 0.7
+        postgresql-simple >= 0.6 && < 0.8
     hs-source-dirs:   src
     default-language: Haskell2010
 
