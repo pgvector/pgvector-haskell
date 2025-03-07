@@ -6,6 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: haskell-actions/setup@v2
+        with:
+          ghc-version: "9.10"
       - uses: ankane/setup-postgres@v1
         with:
           database: pgvector_haskell_test
