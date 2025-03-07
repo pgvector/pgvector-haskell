@@ -1,6 +1,6 @@
 cabal-version:      3.0
 name:               pgvector
-version:            0.1.0
+version:            0.1.1
 synopsis:           pgvector support for Haskell
 description:        Adds the vector data type to postgresql-simple
 category:           Database
@@ -19,7 +19,7 @@ source-repository head
 source-repository this
   type:     git
   location: https://github.com/pgvector/pgvector-haskell.git
-  tag:      v0.1.0
+  tag:      v0.1.1
 
 common warnings
     ghc-options: -Wall

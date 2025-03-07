@@ -1,4 +1,4 @@
-## 0.1.1 (unreleased)
+## 0.1.1 (2025-03-06)
 
 - Added support for GHC 9.8+
 
