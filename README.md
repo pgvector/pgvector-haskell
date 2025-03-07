@@ -8,7 +8,7 @@ Supports [postgresql-simple](https://hackage.haskell.org/package/postgresql-simp
 
 ## Getting Started
 
-Add this line to your application’s `.cabal` under `build-depends`:
+Add this line to your application’s `.cabal` file under `build-depends`:
 
 ```text
 pgvector >= 0.1 && < 0.2
