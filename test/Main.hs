@@ -26,6 +26,6 @@ main = do
     forEach conn q [Vector [1, 1, 1]] $ \(Only embedding) ->
         putStrLn $ show (embedding :: Vector)
 
-    _ <- execute_ conn "CREATE INDEX ON items USING ivfflat (embedding vector_l2_ops) WITH (lists = 1)"
+    _ <- execute_ conn "CREATE INDEX ON items USING hnsw (embedding vector_l2_ops)"
 
     putStrLn "Success"
