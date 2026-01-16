@@ -29,7 +29,7 @@ library
     exposed-modules:  Pgvector
     build-depends:
         base >= 4.6 && < 5,
-        bytestring >= 0.10 && < 0.12,
+        bytestring >= 0.10 && < 0.13,
         postgresql-simple >= 0.6 && < 0.8
     hs-source-dirs:   src
     default-language: Haskell2010
