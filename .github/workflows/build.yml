@@ -4,10 +4,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: haskell-actions/setup@v2
         with:
-          ghc-version: "9.12"
+          ghc-version: "9.14"
       - uses: ankane/setup-postgres@v1
         with:
           database: pgvector_haskell_test
